@@ -1,0 +1,47 @@
+===========================================
+PREFACE
+===========================================
+This program is aims to create tables and insert the dataset into a PostgreSQL database.
+
+
+===========================================
+URL DATASET
+===========================================
+Dataset URL: hhttps://www.kaggle.com/datasets/anthonypino/melbourne-housing-market?select=MELBOURNE_HOUSE_PRICES_LESS.csv
+
+===========================================
+Data Definition Language Syntax
+===========================================
+Defines the structure of the `table_m3`, specifying columns, data types, and constraints using `CREATE TABLE`.
+
+CREATE TABLE table_m3 (
+    Suburb VARCHAR(50),
+    Address VARCHAR(100),
+    Rooms INT,
+    Type VARCHAR(10),
+    Price FLOAT,
+    Method VARCHAR(50),
+    SellerG VARCHAR(100),
+    Date DATE,
+    Postcode INT,
+    Regionname VARCHAR(100),
+    Propertycount INT,
+    Distance FLOAT,
+    CouncilArea VARCHAR(100)
+);
+
+===========================================
+Data Manipulation Language Syntax
+===========================================
+Inserts data from a CSV file into the `table_m3` using `COPY`.
+
+SET datestyle = 'DMY';
+
+COPY table_m3(Suburb,Address,Rooms,Type,Price,Method,SellerG,
+            Date,Postcode,Regionname,Propertycount,Distance,CouncilArea)
+FROM '/data/P2M3_angga_data_raw.csv'
+WITH (
+    FORMAT csv,
+    HEADER true,
+    DELIMITER ','
+);

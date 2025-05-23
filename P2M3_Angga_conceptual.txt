@@ -1,0 +1,55 @@
+1. Jelaskan apa yang dimaksud dengan NoSQL menggunakan pemahaman yang kalian ketahui !
+Answare : NonSQL adalah sebuah jenis basis data yang dirancang untuk menghandle data yang yang bersifat flesible  dan berskala besar, 
+yang tidak bergantung pada model relasional tradisional seperti yang digunakan pada SQL. NonSQL juga berfokus pada pengolahan data yang
+tidak terstruktur atau semi struktur, hal ini lah yang membuatnya sangat cocok untuk aplikasi yang modern yang memerlukan penyimpanan data
+yang besar, fleksible, dan cepat.
+
+2. Jelaskan kapan harus menggunakan NoSQL dan Relational Database Management System !
+Answare : NonSQL lebih cocok digunakan pada situasi dimana aplikasi membutuhkan skala storage yang besar, fleksible dan performa yang tinggi
+dalam pengolahan data yang tidak terstruktur atau semi struktur. Sedangkan pada RDBMS itu sendiri lebih cocok jika digunakan pada data yang 
+terstruktur yang membutuhkan konsistensi yang tinggi, serta query yang kompleks untuk aplikasi dengan data yang relatif kecil dan terstruktur.
+
+3. Sebutkan contoh 2 tools/platform NoSQL selain ElasticSearch beserta keunggulan tools/platform tersebut !
+Answare : 
+    1. MongoDB, merupakan salah satu tools Database NonSQL yang saat ini sedang populer, yang menggunakan model dokumen untuk menyimpan
+    data dalam format BSON(Binary JSON). Beberapa keunggulan dari MongoDB :
+        * Skalabilitas Horizontal,
+        * Fleksibilitas Data,
+        * Query Yang Kuat,
+        * Replikasi dan Keandalannya.
+
+    2. Cassandra, merupakan salah satu tools Database NonSQL juga, yang dirancang untuk menangani big data dengan Skalabilitas dan ketersediaan
+    yang tinggi. Cassandra sendiri menggunakan model kolom dan sangat ideal untuk aplikasi yang membutuhkan penyimpanan data terdistribusi.
+    Beberapa keunggulan dari Cassandra :
+        * Scalability,
+        * Ketersediaan Tinggi dan Fault Tolerance,
+        * Write-Optimized,
+        * Data Model Kolom.
+Kesimpulannya : MongoDB sangat cocok untuk aplikasi yang memerlukan fleksibilitas data dan query kompleks pada data tidak terstruktur atau 
+semi-terstruktur, serta membutuhkan skalabilitas horizontal. Sedangkan Cassandra lebih cocok untuk aplikasi yang membutuhkan skala besar 
+dan ketersediaan tinggi, serta mengutamakan kecepatan menulis dan toleransi kegagalan untuk aplikasi berbasis big data atau real-time analytics.
+
+4. Jelaskan apa yang Anda ketahui dari Airflow menggunakan pemahaman dan bahasa Anda sendiri !
+Airflow merupakan salah satu platform open-source yang digunakan untuk mengelola, menjadwalkan, dan mengawasi alur kerja, atau dapat dikatakan 
+juga pipeline secara otomatis. Dengan menggunakan Airflow, kita dapat membuat alur kerja yang kompleks dan terdistribusi yang dapat mengelola
+berbagai proses, mulai dari pemprosesan data hingga pengambilan keputusan secara otomatis, yang berhubungan dengan berbagai sistem atau aplikasi.
+
+5. Jelaskan apa yang Anda ketahui dari Great Expectations menggunakan pemahaman dan bahasa Anda sendiri !
+Great Expectations(GX) adalah salah satu platform open-source yang digunakan untuk memvalidasi, mendokumentasi, dan memantau kualitas data dalam
+pipeline data. Dengan menggunakan Great Expectations kita dapat memvalidasi data yang diproses memenuhi standart tertentu dan dapat diandalkan,
+sebelum digunakan dalam analisis, report, ataupun pemprosesan data lainnya.
+
+6. Jelaskan apa yang Anda ketahui dari Batch Processing menggunakan pemahaman dan bahasa Anda sendiri (Definisi, Contoh Kasus Penggunaan, Tools, dll) !
+Batch Processing adalah suatu metode pemprosesan data yang dilakukan dengan cara mengumpulkan data dalam satu kelompok atau batch, lalu pemprosesannya
+sendiri dilakukan sekaligus pada waktu yang sama atau waktu yang sudah ditentukan ketika batch atau kelompok itu siap. Pada dasarnya
+pemprosesan dengan metode ini tidak dilakukan secara langsung satu persatu, melainkan dilakukan pemprosesan secara kolektif dalam satu sesi.
+Contoh kasus penggunaan Batch Processing, yaitu :
+    * Laporan keuangan,
+    * Pemprosesan,
+    * Pengolahan Data Sensor, 
+    * Penyusunan Data Analitik, dan lain-lain.
+
+Beberapa tools yang digunakan pada Batch Processing :
+    * Airflow
+    * AWS Batch
+    * Apache Spark
