@@ -26,4 +26,5 @@ Pada proyek ini, saya memanfaatkan beberapa teknologi dan library utama untuk me
 * Elasticsearch & Helpers: Untuk indexing dan pencarian data yang cepat dan scalable.
 * Apache Airflow: Digunakan sebagai workflow orchestration tool dengan pendekatan DAG (Directed Acyclic Graph) untuk mengatur task secara terjadwal dan terstruktur.
 * Great Expectations: Untuk validasi dan quality check data secara otomatis sebelum proses lanjut.
+
 Dengan kombinasi tools ini, pipeline dapat berjalan secara otomatis dari ekstraksi, transformasi, validasi, hingga loading data ke Elasticsearch, sehingga mendukung analisis data properti secara realtime dan akurat.
